@@ -1,0 +1,31 @@
+{
+  "name": "syncmilestones",
+  "version": "1.0.0",
+  "description": "Sync github milestones from one repo to a bunch of others",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midgethoen/syncmilestones.git"
+  },
+  "bin": {
+    "syncmilestones": "./index.js"
+  },
+  "keywords": [
+    "sync",
+    "copy",
+    "github",
+    "milestones"
+  ],
+  "author": "Midge 't Hoen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midgethoen/syncmilestones/issues"
+  },
+  "homepage": "https://github.com/midgethoen/syncmilestones#readme",
+  "dependencies": {
+    "ramda": "^0.21.0"
+  }
+}
