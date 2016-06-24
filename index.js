@@ -9,9 +9,11 @@ try {
   }
 
   var repos = process.argv.slice(2)
+  if (repos.indexOf('-h') > -1 || repos.indexOf('--help') > -1){
+    throw undefined
+  }
   if (repos.length < 2) {
     throw new Error('I can haz more more repos?')
-
   }
 
   var sourceRepo = repos[0]
@@ -109,7 +111,9 @@ try {
     req.end()
   }
 } catch (e){
-  console.error(e)
+  if (e) {
+    console.error(e)
+  }
   console.error('Usage:')
   console.error('syncmilestones [source_repo], [target_repos, ...]')
 }
